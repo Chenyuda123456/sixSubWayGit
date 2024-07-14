@@ -1,0 +1,220 @@
+{
+  "BSeqServiceStsList": [{
+    "Descripe": "普通单程票售票",
+    "ModuleList": [{
+      "ModuleId": 0,
+      "ModuleType": 101,
+      "ModuleWorkSts": 0
+    },
+      {
+        "ModuleId": 1,
+        "ModuleType": 105,
+        "ModuleWorkSts": 0
+      },
+      {
+        "ModuleId": 0,
+        "ModuleType": 102,
+        "ModuleWorkSts": 0
+      },
+      {
+        "ModuleId": 8,
+        "ModuleType": 114,
+        "ModuleWorkSts": 0
+      },
+      {
+        "ModuleId": 16,
+        "ModuleType": 106,
+        "ModuleWorkSts": 0
+      }
+
+    ],
+    "ServiceSts": {
+      "ManualForbit": false,
+      "ServerForbit": false,
+      "WorkSts": 0
+    },
+    "Type": 0
+  },
+    "Descripe": "付费出站票售票",
+    "ModuleList": [{
+      "ModuleId": 0,
+      "ModuleType": 101,
+      "ModuleWorkSts": 0
+    },
+      {
+        "ModuleId": 1,
+        "ModuleType": 105,
+        "ModuleWorkSts": 0
+      },
+      {
+        "ModuleId": 0,
+        "ModuleType": 102,
+        "ModuleWorkSts": 0
+      },
+      {
+        "ModuleId": 8,
+        "ModuleType": 114,
+        "ModuleWorkSts": 0
+      },
+      {
+        "ModuleId": 16,
+        "ModuleType": 106,
+        "ModuleWorkSts": 0
+      }
+
+    ],
+    "ServiceSts": {
+      "ManualForbit": false,
+      "ServerForbit": false,
+      "WorkSts": 0
+    },
+    "Type": 1
+    },
+
+    {
+      "Descripe": "免费出站票",
+      "ModuleList": [{
+        "ModuleId": 0,
+        "ModuleType": 101,
+        "ModuleWorkSts": 0
+      },
+        {
+          "ModuleId": 1,
+          "ModuleType": 105,
+          "ModuleWorkSts": 0
+        }
+      ],
+      "ServiceSts": {
+        "ManualForbit": false,
+        "ServerForbit": false,
+        "WorkSts": 0
+      },
+      "Type": 2
+    },
+    {
+      "Descripe": "票卡业务处理",
+      "ModuleList": [{
+        "ModuleId": 1,
+        "ModuleType": 105,
+        "ModuleWorkSts": 0
+      }],
+      "ServiceSts": {
+        "ManualForbit": false,
+        "ServerForbit": false,
+        "WorkSts": 0
+      },
+      "Type": 3
+    }
+  ],
+  "ModuleServiceStsList": [{
+    "ModuleId": 0,
+    "ModuleName": "MODULE_TIOM",
+    "ModuleType": 101,
+    "ServiceSts": {
+      "ManualForbit": false,
+      "ServerForbit": false,
+      "WorkSts": 0
+    }
+  },
+    {
+      "ModuleId": 0,
+      "ModuleName": "MODULE_CH",
+      "ModuleType": 102,
+      "ServiceSts": {
+        "ManualForbit": false,
+        "ServerForbit": false,
+        "WorkSts": 0
+      }
+    },
+    {
+      "ModuleId": 0,
+      "ModuleName": "MODULE_BR",
+      "ModuleType": 103,
+      "ServiceSts": {
+        "ManualForbit": false,
+        "ServerForbit": false,
+        "WorkSts": 0
+      }
+    },
+    {
+      "ModuleId": 1,
+      "ModuleName": "MODULE_TPU",
+      "ModuleType": 105,
+      "ServiceSts": {
+        "ManualForbit": false,
+        "ServerForbit": false,
+        "WorkSts": 0
+      }
+    },
+    {
+      "ModuleId": 2,
+      "ModuleName": "MODULE_TPU_RECYC",
+      "ModuleType": 105,
+      "ServiceSts": {
+        "ManualForbit": false,
+        "ServerForbit": false,
+        "WorkSts": 0
+      }
+    },
+    {
+      "ModuleId": 4,
+      "ModuleName": "MODULE_SCAN",
+      "ModuleType": 107,
+      "ServiceSts": {
+        "ManualForbit": false,
+        "ServerForbit": false,
+        "WorkSts": 0
+      }
+    },
+    {
+      "ModuleId": 8,
+      "ModuleName": "MODULE_DECP",
+      "ModuleType": 114,
+      "ServiceSts": {
+        "ManualForbit": false,
+        "ServerForbit": false,
+        "WorkSts": 0
+      }
+    },
+    {
+      "ModuleId": 16,
+      "ModuleName": "MODULE_YUN",
+      "ModuleType": 106,
+      "ServiceSts": {
+        "ManualForbit": false,
+        "ServerForbit": false,
+        "WorkSts": 0
+      }
+    },
+    {
+      "ModuleId": 0,
+      "ModuleName": "MODULE_PRT",
+      "ModuleType": 108,
+      "ServiceSts": {
+        "ManualForbit": false,
+        "ServerForbit": false,
+        "WorkSts": 0
+      }
+    },
+    {
+      "ModuleId": 0,
+      "ModuleName": "MODULE_IO",
+      "ModuleType": 110,
+      "ServiceSts": {
+        "ManualForbit": false,
+        "ServerForbit": false,
+        "WorkSts": 0
+      }
+    },
+    {
+      "ModuleId": 0,
+      "ModuleName": "MODULE_TAM",
+      "ModuleType": 111,
+      "ServiceSts": {
+        "ManualForbit": false,
+        "ServerForbit": false,
+        "WorkSts": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+@import '@/styles/mixins';
+
+
+.top-left-kefu {
+  @include flexStyle(flex-start, center);
+
+  .top-left-kefu-content {
+    margin-left: 30px;
+  }
+
+  .top-left-icon-kefu {
+    width: 88px;
+    height: 88px;
+    background: url("../../assets/icon_robot.png");
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .tts-center .center-left .center-left-content {
+    max-width: 798px !important;
+  }
+}
+.tts-center {
+  @include flexStyle(space-around, center);
+  justify-content: space-between;
+  //margin: 40px 0 0 26px;
+  .center-left {
+    @include flexStyle(flex-start, flex-start);
+    overflow: hidden;
+    padding-right: 20px;
+    padding-bottom: 20px;
+
+    .center-left-icon {
+      width: 106px;
+      height: 106px;
+      overflow: hidden;
+      background: url('../../../src/assets/icon_robot.png') no-repeat center;
+      background-size: cover;
+    }
+
+    .center-left-content {
+      max-width: 1580px;
+      max-height: 660px;
+      margin-top: 15px;
+      margin-left: 30px;
+      padding: 20px;
+
+      .c-scrollbar-content {
+        max-height: 610px;
+        overflow: auto;
+        // S 滚动条样式
+        &::-webkit-scrollbar {
+          width: 4px; // 滚动条宽度
+        }
+
+        &::-webkit-scrollbar-thumb {
+          border-radius: 10px;
+          -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+          background: rgba(0, 0, 0, 0.2);
+        }
+
+        &::-webkit-scrollbar-track {
+          -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+          border-radius: 4px;
+          background: rgba(0, 0, 0, 0.1);
+        }
+      }
+
+
+      @include fontStyle(30, normal);
+      background: #ffffff;
+      box-shadow: 2px 2px 12px 0px rgba(0, 0, 0, 0.08);
+      border-radius: 0px 40px 40px 40px;
+
+      &.active {
+        height: 610px;
+      }
+
+      //&.text {
+      //  width: auto;
+      //}
+    }
+  }
+
+  .center-left-content {
+    &.text {
+      padding: 30px 0;
+    }
+
+    .content-card-lost-box {
+      max-height: 610px;
+
+      .c-scrollbar-wrap-all {
+        padding: 0 30px;
+      }
+
+      .message-pic {
+        width: 100%;
+        margin-top: 30px;
+      }
+
+      .message-iframe {
+        width: 100%;
+        height: 400px;
+        margin-top: 30px;
+      }
+    }
+
+    &.active {
+      .content-card-lost-box {
+        max-height: 610px;
+      }
+
+      .c-scrollbar-content {
+        height: 100%;
+      }
+
+      .message-iframe {
+        width: 100%;
+        height: calc(100%);
+        margin-top: 0;
+
+        iframe {
+          body {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  #ttsText {
+    position: fixed;
+    top: 40px;
+    left: 46px;
+  }
+  #ttsContent {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 46px;
+  }
+}
+
+@media screen and (max-width: 1919px) {
+  #ttsText {
+    position: fixed;
+    top: 120px;
+    left: 46px;
+  }
+  #ttsContent {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 46px;
+  }
+  .top-left-kefu {
+    margin-top: 18px;
+  }
+  .top-left-icon-kefu {
+    width: 106px !important;
+    height: 106px !important;
+  }
+}

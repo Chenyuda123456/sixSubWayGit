@@ -1,0 +1,493 @@
+@import 'variable.scss';
+@import 'mixins.scss';
+/* 颜色
+---------------------------------------------------------------- */
+circle{
+  display: none !important;
+}
+.color-white {
+  color: $--subway-color-white1;
+}
+
+.color-gray {
+  color: $--subway-color-gray;
+}
+
+.color-gray2 {
+  color: #1d1a1a;
+}
+
+.color-gray2-6 {
+  color: rgba(29, 26, 26, 0.6);
+}
+
+.color-black {
+  color: #333333;
+}
+
+.color-black-6 {
+  color: rgba(51, 51, 51, 0.6);
+}
+
+.color-deeporange {
+  color: #e8730b;
+}
+
+.color-lightblue {
+  color: #7797ff;
+}
+
+.bg-color-white {
+  color: $--subway-color-white1;
+}
+
+/* 字体大小
+
+---------------------------------------------------------------- */
+.f16 {
+  font-size: 16px;
+}
+
+.f18 {
+  font-size: 18px;
+}
+
+.f20 {
+  font-size: 20px;
+}
+
+.f22 {
+  font-size: 22px;
+}
+
+.f24 {
+  font-size: 24px;
+}
+
+.f26 {
+  font-size: 26px;
+}
+
+.f28 {
+  font-size: 28px;
+}
+
+.f30 {
+  font-size: 30px;
+}
+
+.f32 {
+  font-size: 32px;
+}
+
+.f36 {
+  font-size: 36px;
+}
+
+.f40 {
+  font-size: 40px;
+}
+
+.f48 {
+  font-size: 48px;
+}
+
+.f60 {
+  font-size: 36px;
+}
+
+.fw500 {
+  font-weight: 500;
+}
+
+.fbold {
+  font-weight: bold;
+}
+
+.fw500 {
+  font-weight: 500;
+}
+
+/* margin, padding
+---------------------------------------------------------------- */
+.mt8 {
+  margin-top: 8px;
+}
+
+.mt6 {
+  margin-top: 6px;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.mt18 {
+  margin-top: 18px;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.mt24 {
+  margin-top: 24px;
+}
+
+.mt30 {
+  margin-top: 30px;
+}
+
+.mt32 {
+  margin-top: 32px;
+}
+
+.mt36 {
+  margin-top: 36px;
+}
+
+.mt40 {
+  margin-top: 40px;
+}
+
+.mt50 {
+  margin-top: 50px;
+}
+
+.mt60 {
+  margin-top: 60px;
+}
+
+.mt80 {
+  margin-top: 80px;
+}
+
+.mt100 {
+  margin-top: 100px;
+}
+
+.mt125 {
+  margin-top: 125px;
+}
+
+.mt180 {
+  margin-top: 180px;
+}
+
+.pl10 {
+  padding-left: 10px;
+}
+
+.pl20 {
+  padding-left: 20px;
+}
+
+.pr10 {
+  padding-right: 10px;
+}
+
+.pr20 {
+  padding-right: 20px;
+}
+
+.mr10 {
+  margin-right: 10px;
+}
+
+.mr20 {
+  margin-right: 20px;
+}
+
+.mr30 {
+  margin-right: 30px;
+}
+
+.mr40 {
+  margin-right: 40px;
+}
+
+.mr60 {
+  margin-right: 60px;
+}
+
+.ml5 {
+  margin-left: 5px;
+}
+
+.ml20 {
+  margin-left: 20px;
+}
+
+.ml24 {
+  margin-left: 24px;
+}
+
+.ml30 {
+  margin-left: 30px;
+}
+
+.ml34 {
+  margin-left: 34px;
+}
+
+.ml50 {
+  margin-left: 50px;
+}
+
+.img44 {
+  width: 44px;
+  height: 44px;
+}
+
+.img60 {
+  width: 60px;
+  height: 60px;
+}
+
+.img90 {
+  width: 90px;
+  height: 90px;
+}
+
+.img160 {
+  width: 160px;
+  height: 160px;
+}
+
+.img240 {
+  width: 240px;
+  height: 240px;
+}
+
+.img248230 {
+  width: 248px;
+  height: 230px;
+}
+
+/* 文本格式
+---------------------------------------------------------------- */
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.subway-ant-tabs {
+  :deep(.ant-tabs) {
+    color: rgba(51, 51, 51, 0.3);
+  }
+
+  :deep(.ant-tabs-nav-container) {
+    font-size: 30px;
+  }
+
+  :deep(.ant-tabs-nav .ant-tabs-tab-active) {
+    color: #333333;
+  }
+
+  :deep(.ant-tabs-ink-bar) {
+    height: 4px;
+    border-radius: 2px;
+    background-image: linear-gradient(
+      to right,
+      #fffffe 0%,
+      #fffffe 35%,
+      #333333 36%,
+      #333333 66%,
+      #fffffe 66%,
+      #fffffe 100%
+    );
+  }
+
+  :deep(.ant-tabs-bar) {
+    border-bottom: none; // 没有下划线
+  }
+}
+
+.lh1 {
+  line-height: 1;
+}
+
+/* 定位
+---------------------------------------------------------------- */
+.display-flex-start {
+  @include flexStyle(flex-start, flex-start);
+}
+
+.display-flex-center {
+  @include flexStyle(center, center);
+}
+
+.display-flex-end {
+  @include flexStyle(flex-end, center);
+}
+
+.display-flex-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.display-flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.display-flex-between-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 线路图导航样式
+---------------------------------------------------------------- */
+.svg-station-name{
+  text-align: center;
+}
+
+
+.linemap-nav {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  height: 44px;
+  padding: 8px;
+  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  background-color: #fffffe;
+  z-index: 300;
+}
+
+.linemap-nav .line-name {
+  height: 28px;
+  line-height: 28px;
+  font-size: 16px;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+  padding: 0 18px;
+  // margin-left: 18px;
+  color: #fffffe;
+  font-weight: 400;
+  border-radius: 6px;
+  margin-right: 8px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.over-text {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.over-text2 {
+  overflow:hidden;
+
+  text-overflow:ellipsis;
+
+  display:-webkit-box;
+
+  -webkit-box-orient:vertical;
+
+  -webkit-line-clamp:2;
+}
+
+.btn-set {
+  width: 60px;
+  height: 80px;
+
+  &.start-cn {
+    background: url('/src/assets/logo-start-cn.png') no-repeat;
+    background-size: 100%;
+  }
+
+  &.start-en {
+    background: url('/src/assets/logo-start-en.png') no-repeat;
+    background-size: 100%;
+  }
+
+  &.end-cn {
+    background: url('/src/assets/logo-end-cn.png') no-repeat;
+    background-size: 100%;
+  }
+  &.end-en {
+    background: url('/src/assets/logo-end-en.png') no-repeat;
+    background-size: 100%;
+  }
+}
+
+.ant-picker-dropdown{
+  height: 500px;
+  width: 500px;
+  .ant-picker-panel-container{
+    transform: scale(1.4);
+    position: absolute;
+    left: 60px;
+    top: 56px;
+  }
+}
+.el-button:focus-visible{
+  outline: none;
+}
+.ant-select-dropdown{
+  .ant-cascader-menus{
+    .ant-cascader-menu{
+
+      &::-webkit-scrollbar {
+        width: 6px;
+        background: #ffffff;
+      }
+
+      /*定义滚动条轨道 内阴影+圆角*/
+      &::-webkit-scrollbar-track {
+        background: #ffffff;
+      }
+
+      /*定义滑块 内阴影+圆角*/
+      &::-webkit-scrollbar-thumb {
+        border-radius: 6px;
+        background: rgba(0, 0, 0, 0.2);
+      }
+
+      :deep .van-list__finished-text {
+        margin: auto;
+      }
+      height: 440px;
+      .ant-cascader-menu-item{
+        line-height: 60px;
+        font-size: 20px;
+        padding: 0 40px;
+        svg{
+          display:none
+        }
+      }
+    }
+  }
+}
+.ant-select-item{
+  line-height: 60px;
+  font-size: 30px;
+}
+
+
+.grayScale{
+  filter: grayscale(100%)
+}
+// ant table
+.ant-table-container{
+  font-size: 22px
+}
+
+[v-cloak] {
+  display: none;
+}
+
+@media screen and (min-width: 1180px) {
+  .ant-table-container{
+    font-size: 24px
+  }
+}
+

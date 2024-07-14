@@ -1,0 +1,362 @@
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 48px;
+  height: 48px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.icon.icon-phone {
+  width: 30px;
+  height: 30px;
+  background-image: url('/src/assets/icon_call.png');
+  margin-right: 4px;
+}
+
+.icon.icon-revert {
+  width: 30px;
+  height: 30px;
+  background-image: url('/src/assets/icon_cancel.png');
+  margin-right: 4px;
+}
+
+.icon.icon-hangup {
+  width: 30px;
+  height: 30px;
+  background-image: url('/src/assets/icon_hangup.png');
+  margin-right: 4px;
+}
+
+.icon.icon-time {
+  width: 20px;
+  height: 20px;
+  background-image: url('/src/assets/icons/icon-time.png');
+}
+
+.icon.icon-station {
+  width: 20px;
+  height: 20px;
+  background-image: url('/src/assets/icons/icon-station.png');
+}
+
+.icon.icon-money {
+  width: 20px;
+  height: 20px;
+  background-image: url('/src/assets/icons/icon-money.png');
+}
+
+.icon.icon-lchange {
+  width: 20px;
+  height: 20px;
+  background-image: url('/src/assets/icons/icon-lchange.png');
+}
+
+.icon.icon-distance {
+  width: 20px;
+  height: 20px;
+  background-image: url('/src/assets/icons/icon-distance.png');
+}
+
+.icon.icon-line-station {
+  width: 12px;
+  height: 12px;
+  background-image: url('/src/assets/icons/line-icon-station.png');
+}
+
+.icon.icon-line-walk {
+  width: 12px;
+  height: 12px;
+  background-image: url('/src/assets/icons/line-icon-walk.png');
+}
+
+.icon.icon-line-arrow {
+  width: 24px;
+  height: 24px;
+  background-image: url('/src/assets/icons/icon-linearrow.png');
+}
+
+.icon.icon-line-menuChange-arrow {
+  width: 24px;
+  height: 24px;
+  background-image: url('/src/assets/icon_arrow.png');
+}
+
+.icon.line-icon-arrow-down {
+  width: 24px;
+  height: 24px;
+  background-image: url('/src/assets/icons/line-icon-arrowdown.png');
+}
+
+.icon.icon-train-time {
+  margin-top: 3px;
+  width: 24px;
+  height: 24px;
+  background-image: url('/src/assets/icons/icon-traintime.png');
+}
+
+.icon.icon-position {
+  margin-top: 3px;
+  width: 24px;
+  height: 24px;
+  background-image: url('/src/assets/icons/icon-position.png');
+}
+
+.icon.icon-network-error {
+  width: 40px;
+  height: 40px;
+  background-image: url('/src/assets/icons/icon-network-error.png');
+}
+
+.icon.icon-ticket {
+  width: 36px;
+  height: 36px;
+  background-image: url('/src/assets/icons/icon-ticket.png');
+}
+
+.icon-warning {
+  width: 30px;
+  height: 30px;
+  background-image: url('/src/assets/icons/icon-warning.png');
+  background-size: cover;
+}
+
+.icon.icon-close {
+  width: 44px;
+  height: 44px;
+  background-image: url('/src/assets/icons/icon_close.png');
+}
+
+// 买票 网络错误的图标
+.icon-network-warn {
+  width: 40px;
+  height: 40px;
+  background-image: url('/src/assets/images/icon-warn@2x.png');
+  background-size: cover;
+}
+
+// 买票 网络错误的图标
+.icon-icon-speech {
+  width: 105px;
+  height: 105px;
+  background-image: url('/src/assets/images/icon-speech-col@2x.png');
+  background-size: cover;
+}
+
+// 周边查询 序号原点背景
+.icon-around-index-bg {
+  width: 28px;
+  height: 28px;
+  background: #5687fc;
+  border-radius: 50%;
+  line-height: 28px;
+  text-align: center;
+}
+
+.icon.icon-down {
+  width: 24px;
+  height: 24px;
+  background-image: url('/src/assets/arrow_down@2x.png');
+}
+
+.icon.icon-aixin {
+  width: 44px;
+  height: 44px;
+  background-image: url('/src/assets/icons/icon_aixin@2x.png');
+}
+
+.icon.icon-aixin.active {
+  width: 44px;
+  height: 44px;
+  background-image: url('/src/assets/icons/icon_aixin_s@2x.png');
+}
+
+.icon.icon-kongtiao {
+  width: 44px;
+  height: 44px;
+  background-image: url('/src/assets/icons/icon_kongtiao@2x.png');
+}
+
+.icon.icon-kongtiao.active {
+  width: 44px;
+  height: 44px;
+  background-image: url('/src/assets/icons/icon_kongtiao_s@2x.png');
+}
+
+.icon.icon-nvxing {
+  width: 44px;
+  height: 44px;
+  background-image: url('/src/assets/icons/icon_nvxing@2x.png');
+}
+
+.icon.icon-nvxing.active {
+  width: 44px;
+  height: 44px;
+  background-image: url('/src/assets/icons/icon_nvxing_s@2x.png');
+}
+
+.icon.icon-piao {
+  width: 44px;
+  height: 44px;
+  background-image: url('/src/assets/icons/icon_piao@2x.png');
+}
+
+.icon.icon-piao.active {
+  width: 44px;
+  height: 44px;
+  background-image: url('/src/assets/icons/icon_piao_s@2x.png');
+}
+
+.icon.icon-tushuguan {
+  width: 44px;
+  height: 44px;
+  background-image: url('/src/assets/icons/icon_tushuguan@2x.png');
+}
+
+.icon.icon-tushuguan.active {
+  width: 44px;
+  height: 44px;
+  background-image: url('/src/assets/icons/icon_tushuguan_s@2x.png');
+}
+
+.icon.icon-yusan {
+  width: 44px;
+  height: 44px;
+  background-image: url('/src/assets/icons/icon_yusan@2x.png');
+}
+
+.icon.icon-yusan.active {
+  width: 44px;
+  height: 44px;
+  background-image: url('/src/assets/icons/icon_yusan_s@2x.png');
+}
+.icon.icon-zhitong {
+  width: 44px;
+  height: 44px;
+  background-image: url('/src/assets/icons/icon_zhitong@2x.png');
+}
+
+.icon.icon-zhitong.active {
+  width: 44px;
+  height: 44px;
+  background-image: url('/src/assets/icons/icon_zhitong_s@2x.png');
+}
+.icon.icon-duban {
+  width: 44px;
+  height: 44px;
+  background-image: url('/src/assets/icons/icon_duban@2x.png');
+}
+
+.icon.icon-duban.active {
+  width: 44px;
+  height: 44px;
+  background-image: url('/src/assets/icons/icon_duban_s@2x.png');
+}
+.icon.icon-kefu {
+  width: 44px;
+  height: 44px;
+  background-image: url('/src/assets/icons/icon_kefu@2x.png');
+}
+
+.icon.icon-kefu.active {
+  width: 44px;
+  height: 44px;
+  background-image: url('/src/assets/icons/icon_kefu_s@2x.png');
+}
+.icon.icon-changyou {
+  width: 44px;
+  height: 44px;
+  background-image: url('/src/assets/icons/icon_changyou@2x.png');
+}
+
+.icon.icon-changyou.active {
+  width: 44px;
+  height: 44px;
+  background-image: url('/src/assets/icons/icon_changyou_s@2x.png');
+}
+.icon.icon-myd {
+  width: 60px;
+  height: 60px;
+  background-image: url('/src/assets/icons/icon_myd@2x.png');
+}
+.icon.icon_speech {
+  width: 60px;
+  height: 60px;
+  background-image: url('/src/assets/icons/icon_speech@2x.png');
+}
+.icon.icon_stop {
+  width: 60px;
+  height: 60px;
+  background-image: url('/src/assets/icons/icon_stop@2x.png');
+}
+.icon.icon_keyboard {
+  width: 60px;
+  height: 60px;
+  background-image: url('/src/assets/icons/icon_keyboard@2x.png');
+}
+.icon.icon_clear {
+  width: 28px;
+  height: 28px;
+  background-image: url('/src/assets/icons/icon_clear@2x.png');
+}
+.icon.icon_cash {
+  width: 52px;
+  height: 52px;
+  background-image: url('/src/assets/icons/icon_cash2@2x.png');
+}
+.icon.icon_cash_s {
+  width: 52px;
+  height: 52px;
+  background-image: url('/src/assets/icons/icon_cash2_s@2x.png');
+}
+.icon.icon_zfb {
+  width: 52px;
+  height: 52px;
+  background-image: url('/src/assets/icons/ico_alipay2@2x.png');
+}
+.icon.icon_zfb_s {
+  width: 52px;
+  height: 52px;
+  background-image: url('/src/assets/icons/ico_alipay2_s@2x.png');
+}
+.icon.icon_wx {
+  width: 52px;
+  height: 52px;
+  background-image: url('/src/assets/icons/icon_wechat2@2x.png');
+}
+.icon.icon_rmb {
+  width: 52px;
+  height: 52px;
+  background-image: url('/src/assets/icons/icon_cny2@2x.png');
+}
+.icon.icon_reset {
+  width: 30px;
+  height: 30px;
+  background-image: url('/src/assets/icons/icon_reset@2x.png');
+}
+.icon.icon_xingcheng {
+  width: 72px;
+  height: 72px;
+  background-image: url('/src/assets/icons/icon_xingcheng@2x.png');
+}
+.icon.icon_chongzhi {
+  width: 72px;
+  height: 72px;
+  background-image: url('/src/assets/icons/icon_chongzhi@2x.png');
+}
+.icon.icon_gengxin {
+  width: 72px;
+  height: 72px;
+  background-image: url('/src/assets/icons/icon_gengxin@2x.png');
+}
+.icon.icon_tuipiao {
+  width: 72px;
+  height: 72px;
+  background-image: url('/src/assets/icons/icon_tuipiao@2x.png');
+}
+.icon.icon_tips {
+  width: 30px;
+  height: 30px;
+  background-image: url('/src/assets/icons/icon_tips@2x.png');
+}

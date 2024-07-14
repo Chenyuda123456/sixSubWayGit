@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="/favicon.ico" rel="icon" />
+    <meta
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover, user-scalable=0" name="viewport"
+    />
+    <title>苏州轨交六号线</title>
+<!--    <script-->
+<!--      type="text/javascript"-->
+<!--      src="https://static2.qcplay.com/vconsole/vconsole.min.js?1.0"-->
+<!--    ></script>-->
+    <script src="./config.js"></script>
+    <script src="./iclient-leaflet-js/dist/include-leaflet.js"></script>
+    <script src="./bundle.js"></script>
+    <script src="./eventemitter3.js"></script>
+    <!--<script src="./main.min.js"></script>-->
+    <script>
+      // var vConsole = new VConsole();
+      // 设置初始fontsize
+      var fun = function (doc, win) {
+        var docEl = doc.documentElement,
+          resizeEvt =
+            'orientationchange' in window ? 'orientationchange' : 'resize',
+          recalc = function () {
+            var clientWidth = docEl.clientWidth;
+            docEl.style.fontSize = 108 + 'px';
+          };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+      };
+      fun(document, window);
+      window.addEventListener('resize', function()  {
+        fun(document, window);
+      });
+      // 禁用双指放大
+      document.documentElement.addEventListener('touchstart', function (event) {
+        if (event.touches.length > 1) {
+          event.preventDefault();
+        }
+      }, {
+        passive: false
+      });
+
+      // 禁用双击放大
+      var lastTouchEnd = 0;
+      document.documentElement.addEventListener('touchend', function (event) {
+        var now = Date.now();
+        if (now - lastTouchEnd <= 300) {
+          event.preventDefault();
+        }
+        lastTouchEnd = now;
+      }, {
+        passive: false
+      });
+      document.documentElement.style.fontSize = 108 + 'px';
+      // 禁止长按屏幕或者右键打开菜单
+      document.addEventListener('contextmenu', function(event) {
+        event.preventDefault();
+      });
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="/src/main.ts" type="module"></script>
+  </body>
+</html>

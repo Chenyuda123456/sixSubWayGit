@@ -1,0 +1,283 @@
+@import 'src/styles/common';
+@import 'src/styles/mixins';
+@media screen and (min-width: 1180px){
+  .welcome1 {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    background-image: url('/src/assets/bg_home@2x.png');
+    background-size: 801px 100%;
+    background-repeat: no-repeat;
+    background-position: top left;
+
+    .main {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 18px;
+
+      &-left {
+        width: 801px;
+
+        .center {
+          display: flex;
+          align-items: center;
+          padding-left: 40px;
+          margin-top: 20px;
+          .center-line-one {
+            margin-right: 25px;
+            vertical-align: top;
+          }
+
+          .center-line-one img {
+            width: 105px;
+            height: 105px;
+          }
+
+          .center-line-two {
+            font-size: 48px;
+            font-weight: bold;
+            color: #4868c1;
+            line-height: 72px;
+            width: 400px;
+          }
+
+          .center-line-three div {
+            width: 460px;
+            height: 400px;
+            margin: 0 20px;
+          }
+        }
+
+        .speech-tips {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          padding: 0 200px 0 70px;
+          margin-top: 20px;
+
+          &-item {
+            width: 241px;
+            height: 75px;
+            background: linear-gradient(180deg, #e0e7ff 0%, #d4deff 100%);
+            box-shadow: 0px 4px 5px 0px rgba(107, 137, 251, 0.4);
+            border-radius: 38px 38px 38px 0px;
+            font-size: 30px;
+            font-weight: 400;
+            color: #4868c1;
+            line-height: 75px;
+            text-align: center;
+            margin-bottom: 40px;
+          }
+        }
+
+
+        .module-list {
+          padding-left: 60px;
+          margin-top: 34px;
+        }
+        .call {
+          position: fixed;
+          bottom: 44px;
+          left: 64px;
+          font-size: 24px;
+          font-weight: 400;
+          color: #4868c1;
+          line-height: 24px;
+        }
+      }
+
+      &-right {
+        position: absolute;
+        top: 0;
+        right: 30px;
+        width: 1116px;
+
+        .module-list {
+          margin-top: 60px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+
+          .module-item {
+            width: 360px;
+            height: 256px;
+            margin-top: 18px;
+            margin-right: 18px;
+
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3) {
+              margin-top: 0;
+            }
+
+            &:nth-child(3n) {
+              margin-right: 0;
+            }
+
+            // &:first-child {
+            //   width: 538px;
+            //   height: 280px;
+            //   :deep(.module-box .content) {
+            //     display: flex;
+            //     justify-content: center;
+            //     text-align: left;
+            //     img {
+            //       width: 160px;
+            //       height: 160px;
+            //       margin-right: 40px;
+            //     }
+            //     .tips span {
+            //       display: block;
+            //     }
+            //   }
+            // }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1080px){
+  .welcome1 {
+    .main {
+      padding: 0 36px;
+      margin-top: 126px;
+      &-left {
+        height: 440px;
+        background: url("/src/assets/ticket-speech-bg.png");
+        background-size: cover;
+        .center {
+          display: flex;
+          align-items: center;
+          padding: 16px 34px 0 34px;
+          .center-line-one {
+            vertical-align: top;
+          }
+
+          .center-line-two {
+            font-size: 36px;
+            font-weight: bold;
+            color: #4868c1;
+            line-height: 72px;
+            width: 800px;
+          }
+          .center-line-three div {
+            width: 460px;
+            height: 400px;
+            margin: 0 20px;
+          }
+        }
+        .speech-tips {
+          display: flex;
+          flex-wrap: wrap;
+          padding: 0 66px;
+          margin-top: 24px;
+          &-item {
+            padding: 0 40px;
+            height: 75px;
+            margin-right: 30px;
+            background: linear-gradient(180deg, #e0e7ff 0%, #d4deff 100%);
+            box-shadow: 0px 4px 5px 0px rgba(107, 137, 251, 0.4);
+            border-radius: 38px 38px 38px 0px;
+            font-size: 30px;
+            font-weight: 400;
+            color: #4868c1;
+            line-height: 75px;
+            text-align: center;
+            margin-bottom: 30px;
+          }
+        }
+        .call {
+          position: fixed;
+          bottom: 44px;
+          left: 64px;
+          font-size: 24px;
+          font-weight: 400;
+          color: #4868c1;
+          line-height: 24px;
+        }
+      }
+      &-right {
+        .module-list {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          padding: 0 10px;
+          .module-item {
+            margin-top: 20px;
+
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3) {
+              margin-top: 34px;
+            }
+          }
+        }
+      }
+    }
+    .btn-visible{
+      .index-arrow{
+        position: fixed;
+        z-index: 99999;
+        right: 20px;
+        bottom: 80px;
+        img{
+          transform: rotate(90deg);
+          width: 100px;
+          height: 100px;
+          transition: transform .4s;
+        }
+        .index-arrow-up{
+          transform: rotate(0deg);
+        }
+        .index-arrow-down{
+          transform: rotate(180deg);
+        }
+      }
+      .van-popup-index{
+        .van-popup-main{
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          height: 428px;
+         .item{
+           margin: 10px 30px;
+           width: 416px;
+           height: 252px;
+           background: linear-gradient(180deg, #FFFFFF 0%, #EDF6FF 100%);
+           box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.06);
+           border-radius: 30px;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+           img{
+             width: 100px;
+             height: 100px;
+           }
+           .text{
+             height: 36px;
+             font-size: 36px;
+             font-weight: bold;
+             color: #4868C1;
+             line-height: 36px;
+             margin-top: 28px;
+           }
+         }
+        }
+      }
+    }
+
+  }
+}
+
+.buyTicketBack {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  margin: auto;
+  z-index: 999;
+}
